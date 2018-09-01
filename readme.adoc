@@ -2,7 +2,10 @@
 
 
 The visualization code is in the lotrdemo folder that has been made to be standalone. 
+
 So if you just click the html inside it should work even without a server.
+
+You can even https://rawgit.com/neo4j-examples/cytoscape-graph-viz-lotr/master/lotrdemo/lotrdemo.html[run it here], directly from GitHub.
 
 Obviously a database will be needed (connection string (user: `neo4j`, password: `trinity`) hardcoded in `lotrdemo.js`).
 
