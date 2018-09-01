@@ -5,7 +5,7 @@ The visualization code is in the lotrdemo folder that has been made to be standa
 
 So if you just click the html inside it should work even without a server.
 
-You can even https://rawgit.com/neo4j-examples/cytoscape-graph-viz-lotr/master/lotrdemo/lotrdemo.html[run it here], directly from GitHub.
+You can even https://rawgit.com/neo4j-examples/cytoscape-graph-viz-lotr/master/lotrdemo/lotrdemo.html[run it here^], directly from GitHub.
 
 Obviously a database will be needed (connection string (user: `neo4j`, password: `trinity`) hardcoded in `lotrdemo.js`).
 
@@ -16,6 +16,8 @@ The file `scripts/lotr.cypher` with statements to build the database.
 You can run the script either from cypher-shell or from Neo4j browser with "multi-statement-editor" enabled in settings tab.
 
 Note that you will also need https://neo4j.com/docs/graph-algorithms/current/[neo4j-graph-algorithms] installed  (single click in Neo4j-Desktop) as we're computing the betweenness and using that in the positioning of the nodes on screen.
+
+image::lotr-path.jpg[width=400]
 
 Features :
 
