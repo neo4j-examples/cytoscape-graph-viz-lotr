@@ -1,0 +1,18 @@
+[
+	{
+		"selector": "node[neo4j_label*=\"Character\"]",
+		"style": {
+			"content": "data(name)",
+			"background-color": "data(bg)",
+			"background-fit": "cover"
+		}
+	},
+	{
+		"selector": "edge",
+		"style": {
+			"width" : 3,
+			"curve-style": "unbundled-bezier",
+			"target-arrow-shape": "triangle"
+		}
+	}
+]

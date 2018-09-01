@@ -1,0 +1,21 @@
+== Cytoscape Graph Visualization - Lord of The Rings (LOTR)
+
+
+The visualization code is in the lotrdemo folder that has been made to be standalone. 
+So if you just click the html inside it should work even without a server.
+
+Obviously a database will be needed (connection string (user: `neo4j`, password: `trinity`) hardcoded in `lotrdemo.js`).
+
+For that there's an `import/lotr` folder with the csv files that have to be copied into your `NEO4J/import` directory.
+
+The file `scripts/lotr.cypher` with statements to build the database.
+
+You can run the script either from cypher-shell or from Neo4j browser with "multi-statement-editor" enabled in settings tab.
+
+Note that you will also need https://neo4j.com/docs/graph-algorithms/current/[neo4j-graph-algorithms] installed  (single click in Neo4j-Desktop) as we're computing the betweenness and using that in the positioning of the nodes on screen.
+
+Features :
+
+- Finding path between two characters
+- Character search boxes show possible hits if you start typing the name
+- If you click the LOTR icon (upper left of the screen) you get the full map with the betweenness keeping the nodes apart, color coded by race of the character ...

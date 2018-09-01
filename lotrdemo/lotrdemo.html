@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+		<title>Neo4j - Lord Of The Rings - Demo</title>
+		<style type="text/css">
+			@import url(css/jquery-ui.min.css);
+			@import url(css/bootstrap.min.css);
+			@import url(css/lotrdemo.css);
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top navbar-light bg-light">
+				<a id="lotrall" class="navbar-brand" href="#">
+					<img alt="Lord Of The Rings" src="svg/lotr_logo.svg" style="width:20px;height:30px;">
+				</a>
+				<form id="lotrform" class="form-inline">
+					<input id="sourcecharacter" class="ui-widget form-control mr-sm-2" type="text" placeholder="source Character"/>
+					<input id="targetcharacter" class="ui-widget form-control mr-sm-2" type="text" placeholder="target Character"/>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</nav>
+		</header>
+		<div class="container-fluid">
+			<div id="cy"></div>
+		</div>
+		<script type="text/javascript" src="js/cytoscape.min.js"></script>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/popper.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/neo4j-web.min.js"></script>
+		<script type="text/javascript" src="js/lotrdemo.js"></script>
+	</body>
+</html>
